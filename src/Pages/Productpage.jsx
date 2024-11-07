@@ -13,7 +13,8 @@ import image8 from "../Images/alvaro-bernal-RgIKRYhmG2k-unsplash.jpg"
 
 const Productpage = () => {
     return (
-        <div>
+        <>
+        <div className='bg-white'>
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-wrap -m-4">
@@ -184,6 +185,7 @@ const Productpage = () => {
                 </div>
             </section>
         </div>
+        </>
     );
 }
 
