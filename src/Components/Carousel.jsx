@@ -5,12 +5,21 @@ import image6 from "../Images/pexels-castorlystock-3829442.jpg"
 import image7 from "../Images/pexels-gullywabbit-3638006-7749381.jpg"
 import image8 from "../Images/pexels-pixabay-280250.jpg"
 import image3 from "../Images/pexels-joey-nguy-n-1056657-2113994.jpg"
+import { useNavigate } from 'react-router-dom';
 
 import image4 from "../Images/mech.jpg"
 import image11 from "../Images/star.jpg"
 
 
 export default function Carousel() {
+
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/productpage');
+    };
+
+
     return (
         <div>
             <div className="container px-5 mx-auto text-center">
@@ -26,6 +35,7 @@ export default function Carousel() {
                         src={image8}
                         className="rounded-box object-cover w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80"
                         alt="Image 1"
+                        onClick={handleButtonClick}
                     />
                 </div>
                 <div className="carousel-item">
@@ -33,6 +43,7 @@ export default function Carousel() {
                         src={image2}
                         className="rounded-box object-cover w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80"
                         alt="Image 2"
+                        onClick={handleButtonClick}
                     />
                 </div>
                 <div className="carousel-item">
@@ -40,6 +51,7 @@ export default function Carousel() {
                         src={image3}
                         className="rounded-box object-cover w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80"
                         alt="Image 3"
+                        onClick={handleButtonClick}
                     />
                 </div>
                 <div className="carousel-item">
@@ -47,6 +59,7 @@ export default function Carousel() {
                         src={image4}
                         className="rounded-box object-cover w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80"
                         alt="Image 4"
+                        onClick={handleButtonClick}
                     />
                 </div>
                 <div className="carousel-item">
@@ -54,6 +67,7 @@ export default function Carousel() {
                         src={image5}
                         className="rounded-box object-cover w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80"
                         alt="Image 5"
+                        onClick={handleButtonClick}
                     />
                 </div>
                 <div className="carousel-item">
@@ -61,6 +75,7 @@ export default function Carousel() {
                         src={image6}
                         className="rounded-box object-cover w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80"
                         alt="Image 6"
+                        onClick={handleButtonClick}
                     />
                 </div>
                 <div className="carousel-item">
@@ -68,6 +83,7 @@ export default function Carousel() {
                         src={image7}
                         className="rounded-box object-cover w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80"
                         alt="Image 7"
+                        onClick={handleButtonClick}
                     />
                 </div>
             </div>

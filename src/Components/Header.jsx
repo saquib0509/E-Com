@@ -1,10 +1,20 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
+
+    const navigate = useNavigate();
+
+    // Handlers for different pages
+    const goToHome = () => navigate('/');
+    const goToCarts = () => navigate('/carts');
+    const goToProducts = () => navigate('/productpage');
+
+
     return (
         <>
-            <div className="navbar bg-base-300 flex justify-between items-center px-4 md:px-14 py-2 opacity-80 fixed top-0 w-full z-10">
-                <div className="flex-none">
+            <div className="navbar bg-base-300 flex justify-between items-center px-4 md:px-14 py-2 opacity-95 fixed top-0 w-full z-10">
+                <div className="flex-none"  onClick={goToHome}>
                     <p className="btn btn-ghost text-lg md:text-xl">Watch World</p>
                 </div>
 
@@ -53,7 +63,7 @@ export default function Navbar() {
                                 <span className="text-lg font-bold">8 Items</span>
                                 <span className="text-info">Subtotal: $999</span>
                                 <div className="card-actions">
-                                    <button className="btn btn-primary btn-block">View cart</button>
+                                    <button className="btn btn-primary btn-block" onClick={goToCarts}>View cart</button>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +88,6 @@ export default function Navbar() {
                                 </a>
                             </li>
                             <li><a href='#' alt="">Settings</a></li>
-                            <li><a href='#' alt="">Logout</a></li>
                         </ul>
                     </div>
                 </div>

@@ -5,10 +5,16 @@ import image6 from "../Images/pexels-castorlystock-3829442.jpg"
 import image7 from "../Images/men.jpg"
 import image8 from "../Images/pexels-pixabay-280250.jpg"
 import image9 from "../Images/pexels-joey-nguy-n-1056657-2113994.jpg"
+import { useNavigate } from 'react-router-dom';
 
 import image11 from "../Images/star.jpg"
 
 export default function Categories() {
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/productpage');
+    };
     return (
         <div className='bg-orange-50'>
             <section className="py-10 sm:py-20 mx-4 sm:mx-10 lg:mx-40 my-10 "> {/* Adjusted padding and margins for responsiveness */}
@@ -26,6 +32,7 @@ export default function Categories() {
                                     src={image7}
                                     alt="Image 1"
                                     className="w-full h-full object-cover"
+                                    onClick={handleButtonClick}
                                 />
                             </div>
                             <p className="text-sm sm:text-lg font-medium text-gray-700">Men</p> {/* Responsive text size */}
@@ -38,6 +45,7 @@ export default function Categories() {
                                     src={image2}
                                     alt="Image 2"
                                     className="w-full h-full object-cover"
+                                    onClick={handleButtonClick}
                                 />
                             </div>
                             <p className="text-sm sm:text-lg font-medium text-gray-700">Women</p> {/* Responsive text size */}
@@ -50,6 +58,7 @@ export default function Categories() {
                                     src={image5}
                                     alt="Image 3"
                                     className="w-full h-full object-cover"
+                                    onClick={handleButtonClick}
                                 />
                             </div>
                             <p className="text-sm sm:text-lg font-medium text-gray-700">Kids</p> {/* Responsive text size */}
@@ -62,6 +71,7 @@ export default function Categories() {
                                     src={image8}
                                     alt="Image 4"
                                     className="w-full h-full object-cover"
+                                    onClick={handleButtonClick}
                                 />
                             </div>
                             <p className="text-sm sm:text-lg font-medium text-gray-700">Premium</p> {/* Responsive text size */}
@@ -74,6 +84,7 @@ export default function Categories() {
                                     src={image9}
                                     alt="Image 5"
                                     className="w-full h-full object-cover"
+                                    onClick={handleButtonClick}
                                 />
                             </div>
                             <p className="text-sm sm:text-lg font-medium text-gray-700">Sports</p> {/* Responsive text size */}
@@ -86,6 +97,7 @@ export default function Categories() {
                                     src={image11}
                                     alt="Image 6"
                                     className="w-full h-full object-cover"
+                                    onClick={handleButtonClick}
                                 />
                             </div>
                             <p className="text-sm sm:text-lg font-medium text-gray-700">Classic</p> {/* Responsive text size */}

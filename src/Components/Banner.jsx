@@ -6,7 +6,15 @@ import image7 from "../Images/pexels-gullywabbit-3638006-7749381.jpg"
 import image8 from "../Images/pexels-jatin-anand-33853-125779.jpg"
 import image9 from "../Images/pexels-joey-nguy-n-1056657-2113994.jpg"
 
+import { useNavigate } from 'react-router-dom';
+
 export default function Banner() {
+
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/carts');
+    };
     return (
 
         <div className="text-gray-600 body-font bg-cover bg-center mx-4 sm:mx-10 lg:mx-40 rounded-md mt-20">
@@ -33,6 +41,7 @@ export default function Banner() {
                                 src={image6} // Add your image path here
                                 alt="Image 1"
                                 className="w-full h-32 sm:h-48 object-cover"
+                                onClick={handleButtonClick}
                             />
                             {/* Title overlay */}
                             <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 px-2 py-1 text-white text-xs sm:text-sm">
@@ -46,6 +55,7 @@ export default function Banner() {
                                 src={image7} // Add your image path here
                                 alt="Image 2"
                                 className="w-full h-32 sm:h-48 object-cover"
+                                onClick={handleButtonClick}
                             />
                             {/* Title overlay */}
                             <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 px-2 py-1 text-white text-xs sm:text-sm">
@@ -59,6 +69,7 @@ export default function Banner() {
                                 src={image8} // Add your image path here
                                 alt="Image 3"
                                 className="w-full h-32 sm:h-48 object-cover"
+                                onClick={handleButtonClick}
                             />
                             {/* Title overlay */}
                             <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 px-2 py-1 text-white text-xs sm:text-sm">

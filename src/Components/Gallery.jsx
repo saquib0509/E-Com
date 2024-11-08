@@ -5,15 +5,22 @@ import image6 from "../Images/pexels-castorlystock-3829442.jpg"
 import image7 from "../Images/pexels-gullywabbit-3638006-7749381.jpg"
 import image1 from "../Images/pexels-jatin-anand-33853-125779.jpg"
 import image3 from "../Images/pexels-joey-nguy-n-1056657-2113994.jpg"
+import { useNavigate } from 'react-router-dom';
 
 import image4 from "../Images/mech.jpg"
 import image11 from "../Images/star.jpg"
 
 export default function Gallery() {
+
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/productpage');
+    };
     return (
         <div>
             <section class="text-gray-600 body-font">
-                <div class="container px-5 py-24 mx-auto">
+                <div class="container px-5 py-8 mx-auto">
                     <div class="flex flex-col text-center w-full mb-20">
                         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Discover Our Watch Collection</h1>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Explore our exclusive range of premium watches. Whether you're seeking a timeless classic, a cutting-edge smartwatch, or a luxury timepiece, our curated selection has something for every style and occasion. Browse through our best-sellers and find your next perfect watch.</p>

@@ -1,15 +1,17 @@
-import React from 'react'
-
+// Productpage.js
+import React from 'react';
 import image5 from "../Images/pexels-quang-viet-nguyen-107013384-13257109.jpg"
 
-export default function Specifications() {
+const Carts = () => {
+
+
     return (
-        <div>
-            <section className="text-gray-600 body-font overflow-hidden">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-2 text-center">Quick Buy</h2>
-                <div className="container px-5 py-24 mx-auto">
-                    <div className="lg:w-4/5 mx-auto flex flex-wrap">
-                        <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src={image5}/>
+        <>
+            <div className='bg-white'>
+                <section className="text-gray-600 body-font overflow-hidden">
+                    <div className="container px-5 py-24 mx-auto">
+                        <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src={image5} />
                             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                                 <h2 className="text-sm title-font text-gray-500 tracking-widest">Omega</h2>
                                 <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">Omega De Ville Co-axial</h1>
@@ -32,13 +34,13 @@ export default function Specifications() {
                                         </svg>
                                         <span className="text-gray-600 ml-3">4 Reviews</span>
                                     </span>
-                                    
+
                                 </div>
                                 <p className="leading-relaxed">F
-                                The Omega De Ville watch collection is renowned for its refined design, precision, and sophisticated features. Key features include a classic round case, often crafted in stainless steel or gold, with a sleek dial featuring Roman or Arabic numerals. Many models are powered by Omega's co-axial movements, ensuring exceptional accuracy and durability.</p>
+                                    The Omega De Ville watch collection is renowned for its refined design, precision, and sophisticated features. Key features include a classic round case, often crafted in stainless steel or gold, with a sleek dial featuring Roman or Arabic numerals. Many models are powered by Omega's co-axial movements, ensuring exceptional accuracy and durability.</p>
                                 <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
-                                    
-                                    
+
+
                                 </div>
                                 <div className="flex">
                                     <span className="title-font font-medium text-2xl text-gray-900">$999.00</span>
@@ -50,9 +52,12 @@ export default function Specifications() {
                                     </button>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </div>
-    )
+                </section>
+            </div>
+        </>
+    );
 }
+
+export default Carts;

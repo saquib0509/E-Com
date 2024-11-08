@@ -24,19 +24,19 @@ export default function Footer() {
                     </div>
                     <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">COUNTRIES</h2>
+                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">NEW LAUNCHES</h2>
                             <nav className="list-none mb-10">
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Argentina</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Titan Edge Mechanical</a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Bali</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Titan Automatic</a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Dubai</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Xylus Gold</a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">India</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Fastrack Titanium</a>
                                 </li>
                             </nav>
                         </div>
@@ -44,33 +44,33 @@ export default function Footer() {
                             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
                             <nav className="list-none mb-10">
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Beaches</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Men</a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Mountains</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Women</a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Monuments</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Kids</a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">Trekking</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Couple</a>
                                 </li>
                             </nav>
                         </div>
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact us</h2>
+                            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">TYPES</h2>
                             <nav className="list-none mb-10">
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">977-1234-567</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Premium</a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">saquib@gmail.com</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Classic</a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">info@travelzeb.com</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Sports</a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-600 hover:text-gray-800">New Delhi, India</a>
+                                    <a className="text-gray-600 hover:text-gray-800">Smart</a>
                                 </li>
                             </nav>
                         </div>
@@ -95,8 +95,8 @@ export default function Footer() {
                 </div>
                 <div className="bg-orange-100">
                     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                        <p className="text-gray-500 text-sm text-center sm:text-left">© 2022 TravelBee
-                            <a href="https://twitter.com/knyttneve" alt="" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@Visitcountries</a>
+                        <p className="text-gray-500 text-sm text-center sm:text-left">© 2024 Watch Store
+                            <a href="https://twitter.com/knyttneve" alt="" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@mywatches</a>
                         </p>
                         <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                             <a className="text-gray-500" href="https://www.facebook.com">
