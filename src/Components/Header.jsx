@@ -14,13 +14,13 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="navbar bg-base-300 flex justify-between items-center px-4 md:px-14 py-4 opacity-95 fixed top-0 w-full z-40 bg-amber-50">
+            <div className="navbar bg-base-300 flex justify-between items-center px-4 md:px-14 py-3 opacity-95 fixed top-0 w-full z-40 bg-slate-1000">
                 <div className="flex-none" onClick={goToHome}>
                     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                         <img
                             src={logoImage} // Reference to the image in the public folder
                             alt="ConnectMeTo Logo"
-                            className="w-30 h-14 "
+                            className="w-25 h-10 "
                         />
                         
                     </a>
@@ -46,7 +46,7 @@ export default function Navbar() {
                 <div className="flex items-center space-x-2 md:space-x-4">
                     {/* Dropdown for Notifications */}
                     <div className="dropdown dropdown-end">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                        {/* <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                             <div className="indicator">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function Navbar() {
                                 </svg>
                                 <span className="badge badge-sm indicator-item">8</span>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div
                             tabIndex={0}
