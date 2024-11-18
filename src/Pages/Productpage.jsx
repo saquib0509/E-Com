@@ -17,8 +17,8 @@ const Productpage = () => {
         <div className='bg-white'>
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-24 mx-auto">
-                    <div class="flex flex-wrap -m-4">
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image1} />
                             </a>
@@ -28,7 +28,7 @@ const Productpage = () => {
                                 <p class="mt-1">$16.00</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image2} />
                             </a>
@@ -38,7 +38,7 @@ const Productpage = () => {
                                 <p class="mt-1">$21.15</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image3} />
                             </a>
@@ -48,7 +48,7 @@ const Productpage = () => {
                                 <p class="mt-1">$12.00</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image4} />
                             </a>
@@ -58,7 +58,7 @@ const Productpage = () => {
                                 <p class="mt-1">$18.40</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image5} />
                             </a>
@@ -68,7 +68,7 @@ const Productpage = () => {
                                 <p class="mt-1">$16.00</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image6} />
                             </a>
@@ -78,7 +78,7 @@ const Productpage = () => {
                                 <p class="mt-1">$21.15</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image7} />
                             </a>
@@ -88,7 +88,7 @@ const Productpage = () => {
                                 <p class="mt-1">$12.00</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image8} />
                             </a>
@@ -101,7 +101,7 @@ const Productpage = () => {
 
 
 
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image1} />
                             </a>
@@ -111,7 +111,7 @@ const Productpage = () => {
                                 <p class="mt-1">$16.00</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image2} />
                             </a>
@@ -121,7 +121,7 @@ const Productpage = () => {
                                 <p class="mt-1">$21.15</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image3} />
                             </a>
@@ -131,7 +131,7 @@ const Productpage = () => {
                                 <p class="mt-1">$12.00</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image4} />
                             </a>
@@ -141,7 +141,7 @@ const Productpage = () => {
                                 <p class="mt-1">$18.40</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image5} />
                             </a>
@@ -151,7 +151,7 @@ const Productpage = () => {
                                 <p class="mt-1">$16.00</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image6} />
                             </a>
@@ -161,7 +161,7 @@ const Productpage = () => {
                                 <p class="mt-1">$21.15</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image7} />
                             </a>
@@ -171,7 +171,7 @@ const Productpage = () => {
                                 <p class="mt-1">$12.00</p>
                             </div>
                         </div>
-                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image8} />
                             </a>

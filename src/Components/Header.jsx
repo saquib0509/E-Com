@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import logoImage from '../Images/watchLogo.png';
 
 export default function Navbar() {
 
@@ -13,13 +14,20 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="navbar bg-base-300 flex justify-between items-center px-4 md:px-14 py-2 opacity-95 fixed top-0 w-full z-10">
-                <div className="flex-none"  onClick={goToHome}>
-                    <p className="btn btn-ghost text-lg md:text-xl">Watch World</p>
+            <div className="navbar bg-base-300 flex justify-between items-center px-4 md:px-14 py-4 opacity-95 fixed top-0 w-full z-40 bg-amber-50">
+                <div className="flex-none" onClick={goToHome}>
+                    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                        <img
+                            src={logoImage} // Reference to the image in the public folder
+                            alt="ConnectMeTo Logo"
+                            className="w-30 h-14 "
+                        />
+                        
+                    </a>
                 </div>
 
                 {/* Centered Search Bar */}
-                <div className="hidden md:flex flex-1 justify-center bg-base-300">
+                {/* <div className="hidden md:flex flex-1 justify-center bg-base-300">
                     <label className="input input-bordered flex items-center gap-2 md:gap-4 w-full md:w-1/2">
                         <input type="text" className="grow" placeholder="Search" />
                         <svg
@@ -33,7 +41,7 @@ export default function Navbar() {
                                 clipRule="evenodd" />
                         </svg>
                     </label>
-                </div>
+                </div> */}
 
                 <div className="flex items-center space-x-2 md:space-x-4">
                     {/* Dropdown for Notifications */}
@@ -94,7 +102,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Search Bar */}
-            <div className="flex md:hidden justify-center px-4 mt-16 w-full">
+            {/* <div className="flex md:hidden justify-center px-4 mt-16 w-full">
                 <label className="input input-bordered flex items-center gap-2 w-full">
                     <input type="text" className="grow" placeholder="Search" />
                     <svg
@@ -108,7 +116,7 @@ export default function Navbar() {
                             clipRule="evenodd" />
                     </svg>
                 </label>
-            </div>
+            </div> */}
         </>
 
     )
