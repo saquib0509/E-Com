@@ -22,13 +22,13 @@ export default function Carousel() {
 
     return (
         <div>
-            <div className="container px-5 mx-auto text-center">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold title-font mt-20 mx-auto max-w-2xl uppercase">
+            <div className="container px-5 text-center">
+                <h2 className="sm:text-3xl text-2xl mt-14 font-semibold title-font text-gray-900">
                 ← Slide Through our Best Seller →
                 </h2>
             </div>
 
-            <div className="carousel carousel-center bg-white rounded-box max-w-screen-2xl space-x-4 p-4 md:p-8 lg:p-10 m-5 md:m-10 lg:m-20">
+            <div className="carousel carousel-center bg-white rounded-box max-w-screen-2xl space-x-4 md:p-8 lg:p-10 md:m-10 lg:m-20">
 
                 <div className="carousel-item">
                     <img

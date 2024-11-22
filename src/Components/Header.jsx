@@ -1,123 +1,127 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
-import logoImage from '../Images/watchLogo.png';
+import { useState, useEffect } from "react";
+import logo from "../Images/watchLogo.png";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
+const Navbar = () => {
+    const [visible, setVisible] = useState(false); // For mobile menu
+    const [showHeader, setShowHeader] = useState(true); // For header visibility
+    const [lastScroll, setLastScroll] = useState(0); // Store last scroll position
 
-    const navigate = useNavigate();
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScroll = window.scrollY;
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                // Hide header when scrolling down
+                setShowHeader(false);
+            } else {
+                // Show header when scrolling up
+                setShowHeader(true);
+            }
+            setLastScroll(currentScroll);
+        };
 
-    // Handlers for different pages
-    const goToHome = () => navigate('/');
-    const goToCarts = () => navigate('/carts');
-    const goToProducts = () => navigate('/productpage');
-
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [lastScroll]);
 
     return (
-        <>
-            <div className="navbar bg-base-300 flex justify-between items-center px-4 md:px-14 py-3 opacity-95 fixed top-0 w-full z-40 bg-slate-1000">
-                <div className="flex-none" onClick={goToHome}>
-                    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                        <img
-                            src={logoImage} // Reference to the image in the public folder
-                            alt="ConnectMeTo Logo"
-                            className="w-25 h-10 "
-                        />
-                        
-                    </a>
+        <div
+            className={`bg-orange-100 px-10 py-4 flex items-center justify-between font-medium fixed w-full top-0 transition-transform duration-300 z-50 ${
+                showHeader ? "translate-y-0" : "-translate-y-full"
+            }`}
+        >
+            <Link to="/"><img src={logo} className="w-24" alt="aa" /></Link>
+
+            <ul className="hidden md:flex lg:flex flex-wrap gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 ">
+                <Link to="/" className="text-gray-700 hover:text-black flex flex-col items-center gap-1">
+                    <p>HOME</p>
+                    <hr className="w-2/4 border-none h-[1.5px] hidden" />
+                </Link>
+
+                <Link to="/Products" className="text-gray-700 hover:text-black hidden md:flex lg:flex flex-col items-center gap-1">
+                    <p>PRODUCT</p>
+                    <hr className="w-2/4 border-none h-[1.5px] hidden" />
+                </Link>
+
+                <Link to="/AboutUs" className="text-gray-700 hover:text-black hidden md:flex lg:flex flex-col items-center gap-1">
+                    <p>ABOUT</p>
+                    <hr className="w-2/4 border-none h-[1.5px] hidden" />
+                </Link>
+
+                <Link to="/ContactUs" className="text-gray-700 hover:text-black hidden md:flex lg:flex flex-col items-center gap-1">
+                    <p>CONTACT US</p>
+                    <hr className="w-2/4 border-none h-[1.5px] hidden" />
+                </Link>
+            </ul>
+
+            <div className="flex items-center gap-6">
+                <div className="w-5 cursor-pointer sm:hidden">
+                    <svg
+                        onClick={() => setVisible(true)}
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="size-6"
+                    >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
                 </div>
-
-                {/* Centered Search Bar */}
-                {/* <div className="hidden md:flex flex-1 justify-center bg-base-300">
-                    <label className="input input-bordered flex items-center gap-2 md:gap-4 w-full md:w-1/2">
-                        <input type="text" className="grow" placeholder="Search" />
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 16 16"
-                            fill="currentColor"
-                            className="h-4 w-4 opacity-70">
-                            <path
-                                fillRule="evenodd"
-                                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                                clipRule="evenodd" />
-                        </svg>
-                    </label>
-                </div> */}
-
-                <div className="flex items-center space-x-2 md:space-x-4">
-                    {/* Dropdown for Notifications */}
-                    <div className="dropdown dropdown-end">
-                        {/* <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-                            <div className="indicator">
+                <div
+                    className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${
+                        visible ? "w-full" : "w-0"
+                    }`}
+                >
+                    <div className="flex flex-col text-gray-600 ">
+                        <div className="flex items-center gap-4 p-4">
+                            <div
+                                onClick={() => setVisible(false)}
+                                className="flex items-center gap-4 p-2 cursor-pointer"
+                            >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="h-5 w-5"
                                     fill="none"
                                     viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    strokeWidth={1.5}
+                                    stroke="currentColor"
+                                    className="size-6 "
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                                 </svg>
-                                <span className="badge badge-sm indicator-item">8</span>
-                            </div>
-                        </div> */}
-
-                        <div
-                            tabIndex={0}
-                            className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
-                            <div className="card-body">
-                                <span className="text-lg font-bold">8 Items</span>
-                                <span className="text-info">Subtotal: $999</span>
-                                <div className="card-actions">
-                                    <button className="btn btn-primary btn-block" onClick={goToCarts}>View cart</button>
-                                </div>
+                                <p>Back</p>
                             </div>
                         </div>
-                    </div>
 
-                    {/* Profile Dropdown */}
-                    <div className="dropdown dropdown-end">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                            <div className="w-8 md:w-10 rounded-full">
-                                <img
-                                    alt="Profile"
-                                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                            </div>
-                        </div>
-                        <ul
-                            tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 md:w-52 p-2 shadow">
+                        <nav className="list-none mb-6 space-y-2 text-center md:text-left ">
                             <li>
-                                <a className="justify-between" href='#' alt="">
-                                    Profile
-                                    <span className="badge">New</span>
-                                </a>
+                                <Link to="/" className="text-gray-600 hover:text-gray-800">
+                                    Home
+                                </Link>
                             </li>
-                            <li><a href='#' alt="">Settings</a></li>
-                        </ul>
+                            <li>
+                                <Link to="Products" className="text-gray-600 hover:text-gray-800">
+                                    Products
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="AboutUs " className="text-gray-600 hover:text-gray-800">
+                                    About Us
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="ContactUs" className="text-gray-600 hover:text-gray-800">
+                                    Contact
+                                </Link>
+                            </li>
+                        </nav>
                     </div>
                 </div>
             </div>
+        </div>
+    );
+};
 
-            {/* Mobile Search Bar */}
-            {/* <div className="flex md:hidden justify-center px-4 mt-16 w-full">
-                <label className="input input-bordered flex items-center gap-2 w-full">
-                    <input type="text" className="grow" placeholder="Search" />
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        className="h-4 w-4 opacity-70">
-                        <path
-                            fillRule="evenodd"
-                            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                            clipRule="evenodd" />
-                    </svg>
-                </label>
-            </div> */}
-        </>
-
-    )
-}
+export default Navbar;

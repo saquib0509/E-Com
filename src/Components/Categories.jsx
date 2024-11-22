@@ -19,8 +19,8 @@ export default function Categories() {
         <div className='bg-orange-50'>
             <section className="py-10 sm:py-20 mx-4 sm:mx-10 lg:mx-40 my-10 "> {/* Adjusted padding and margins for responsiveness */}
                 <div className="container px-5 mx-auto text-center">
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-20"> {/* Responsive text sizes */}
-                        THE BEST WAY TO BUY THE PRODUCTS YOU LOVE
+                    <h2 className="sm:text-3xl text-2xl font-semibold mb-20 title-font text-gray-900"> {/* Responsive text sizes */}
+                        Search By Filter
                     </h2>
 
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-8"> {/* Adjusted grid and gap for responsiveness */}

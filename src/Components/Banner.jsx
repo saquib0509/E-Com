@@ -40,7 +40,7 @@ export default function Banner() {
                             <img
                                 src={image6} // Add your image path here
                                 alt="Image 1"
-                                className="w-full h-32 sm:h-48 object-cover"
+                                className="w-full h-32 sm:h-48 object-cover cursor-pointer"
                                 onClick={handleButtonClick}
                             />
                             {/* Title overlay */}
@@ -54,7 +54,7 @@ export default function Banner() {
                             <img
                                 src={image7} // Add your image path here
                                 alt="Image 2"
-                                className="w-full h-32 sm:h-48 object-cover"
+                                className="w-full h-32 sm:h-48 object-cover cursor-pointer"
                                 onClick={handleButtonClick}
                             />
                             {/* Title overlay */}
@@ -68,7 +68,7 @@ export default function Banner() {
                             <img
                                 src={image8} // Add your image path here
                                 alt="Image 3"
-                                className="w-full h-32 sm:h-48 object-cover"
+                                className="w-full h-32 sm:h-48 object-cover cursor-pointer"
                                 onClick={handleButtonClick}
                             />
                             {/* Title overlay */}

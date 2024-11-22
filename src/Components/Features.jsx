@@ -14,7 +14,7 @@ export default function Features() {
     return (
         <div>
             <section className="text-gray-600 body-font px-4 sm:px-6 lg:px-40 mb-10">
-                <h2 className="text-center text-gray-400 text-3xl sm:text-4xl font-semibold mt-20 mb-20 uppercase">New Series Launched</h2>
+                <h2 className="text-center text-gray-900 text-3xl sm:text-4xl font-semibold mt-20 mb-20 uppercase">New Launches</h2>
                 <div className="container mx-auto">
                     {/* Grid layout for images */}
                     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -23,8 +23,8 @@ export default function Features() {
                             <div className="rounded-lg h-48 sm:h-64 overflow-hidden">
                                 <img alt="content" className="object-cover object-center h-full w-full" src={image1} />
                             </div>
-                            <h2 className="title-font text-xl sm:text-2xl font-medium text-gray-900 mt-6 mb-3">Titan Edge Mechanical</h2>
-                            <p className="leading-relaxed text-base">Titan Presenting 'The Edge': A mechanical watch</p>
+                            <h2 className="title-font text-xl sm:text-2xl font-medium text-gray-900 mt-6 mb-3 text-center">Titan Edge Mechanical</h2>
+                            <p className="leading-relaxed text-base text-center">Titan Presenting 'The Edge': A mechanical watch</p>
                             <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded" onClick={handleButtonClick}>
                                 View
                             </button>
@@ -35,8 +35,8 @@ export default function Features() {
                             <div className="rounded-lg h-48 sm:h-64 overflow-hidden">
                                 <img alt="content" className="object-cover object-center h-full w-full" src={image2} />
                             </div>
-                            <h2 className="title-font text-xl sm:text-2xl font-medium text-gray-900 mt-6 mb-3">Xylus Gold</h2>
-                            <p className="leading-relaxed text-base">Gold Series of watches presented by Xylus</p>
+                            <h2 className="title-font text-xl sm:text-2xl font-medium text-gray-900 mt-6 mb-3 text-center">Xylus Gold</h2>
+                            <p className="leading-relaxed text-base text-center">Gold Series of special watches presented by Xylus</p>
                             <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded" onClick={handleButtonClick}>
                                 View
                             </button>
@@ -47,9 +47,9 @@ export default function Features() {
                             <div className="rounded-lg h-48 sm:h-64 overflow-hidden">
                                 <img alt="content" className="object-cover object-center h-full w-full" src={image3} />
                             </div>
-                            <h2 className="title-font text-xl sm:text-2xl font-medium text-gray-900 mt-6 mb-3">Titan Automatic</h2>
-                            <p className="leading-relaxed text-base">Titan's New series Automatic</p>
-                            <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded" onClick={handleButtonClick}>
+                            <h2 className="title-font text-xl sm:text-2xl font-medium text-gray-900 mt-6 mb-3 text-center">Titan Automatic</h2>
+                            <p className="leading-relaxed text-base text-center">Titan's New series that shows Automatic trend</p>
+                            <button className="flex mx-auto mt-6  text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded" onClick={handleButtonClick}>
                                 View
                             </button>
                         </div>

@@ -7,7 +7,6 @@ import Banner from '../Components/Banner';
 import Categories from '../Components/Categories';
 import Carousel from '../Components/Carousel';
 import Gallery from '../Components/Gallery';
-import Footer from '../Components/Footer';
 import Specifications from '../Components/Specifications';
 
 export default function Home() {
@@ -22,8 +21,7 @@ export default function Home() {
                 <Categories />
                 <Carousel />
                 <Gallery />
-                <Specifications />
-                
+            
             </div>
         </>
     )
