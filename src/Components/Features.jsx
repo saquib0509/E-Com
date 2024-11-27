@@ -81,7 +81,7 @@ export default function Features() {
                 <div
                     className="rounded-lg flex justify-center items-center"
                     style={{
-                        transform: `scale(${0.6 + scrollPosition / 1300})`, // Start at 0.8 and grow with scroll
+                        transform: `scale(${0.4 + scrollPosition / 1300})`, // Start at 0.8 and grow with scroll
                         transition: "transform 0.3s ease-out",
                         transformOrigin: "center", // Scale from the center
                     }}
