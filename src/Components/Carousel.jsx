@@ -28,7 +28,7 @@ export default function Carousel() {
                 </h2>
             </div>
 
-            <div className="carousel carousel-center bg-white rounded-box max-w-screen-2xl space-x-4 md:p-8 lg:p-10 md:m-10 lg:m-20">
+            <div className="carousel carousel-center bg-white rounded-box max-w-screen-2xl space-x-4  md:p-8 lg:p-10 md:m-10 lg:m-20 ">
 
                 <div className="carousel-item">
                     <img

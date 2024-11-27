@@ -13,8 +13,8 @@ export default function Footer() {
     }
     return (
         <div className='bg-orange-100'>
-            <footer className="text-gray-600 body-font px-6 md:px-10">
-                <div className="container mx-auto flex flex-wrap py-16 md:py-24 gap-y-10">
+            <footer className="text-gray-600 body-font px-6 md:px-10 text-center">
+                <div className="container mx-auto flex flex-wrap py-4 md:py-4 gap-y-10">
                     {/* Logo and Name */}
                     <div className="w-full md:w-1/4 flex flex-col items-center md:items-start p-4">
                         <a className="flex items-center justify-center md:justify-start title-font font-medium text-gray-900">
@@ -44,7 +44,7 @@ export default function Footer() {
                     {/* Contact Info */}
                     <div className="w-full md:w-1/4 flex flex-col items-center md:items-start p-4 ">
                         <h2 className="font-bold text-center text-gray-900 tracking-widest text-sm mb-3">CONTACT</h2>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-sm text-gray-600 text-start">
                             Email: contact@watchworld.com<br />
                             Phone: +91 87890 29399<br />
                             Address: Jamia Nagar, Okhla, New Delhi, Delhi
@@ -75,9 +75,10 @@ export default function Footer() {
                                 className="cursor-pointer w-4 h-4 sm:w-8 sm:h-8 md:w-10 md:h-10"
                             />
                         </div>
-
                     </div>
-                    <p className='w-full md:w-1/4 flex flex-col text-center md:items-start p-4'>
+                </div>
+                <div className='pb-4'>
+                <p >
                         Copyright 2024 | @Watchworld | All Right Reserved.
                     </p>
                 </div>

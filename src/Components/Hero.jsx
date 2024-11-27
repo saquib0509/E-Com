@@ -2,9 +2,17 @@
 import hero from "../Images/alvaro-bernal-RgIKRYhmG2k-unsplash.jpg" // Importing the image
 import image1 from "../Images/mech.jpg"
 
+import { useNavigate } from 'react-router-dom';
+
+
 import heroVideo from "../assets/watchVid.mp4";
 
 export default function Hero() {
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/productpage');
+    };
     
     return (
         <div className="w-full h-screen relative overflow-hidden">
@@ -35,7 +43,7 @@ export default function Hero() {
                     <p className="text-lg md:text-xl mb-6">
                         Discover the perfect watch for every occasion.
                     </p>
-                    <button className="bg-orange-100 text-black font-semibold py-2 px-6 rounded-md hover:bg-gray-300 transition">
+                    <button className="bg-orange-100 text-black font-semibold py-2 px-6 rounded-md hover:bg-gray-300 transition" onClick={handleButtonClick}>
                         Shop Now
                     </button>
                     
