@@ -15,7 +15,7 @@ export default function Hero() {
     };
     
     return (
-        <div className="w-full h-screen relative overflow-hidden">
+        <div className="w-full h-screen relative overflow-hidden z-0">
             {/* <img
                 src={image4}
                 alt="Elegant Watch Collection"

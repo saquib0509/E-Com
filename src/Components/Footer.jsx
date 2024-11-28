@@ -46,7 +46,7 @@ export default function Footer() {
                         <h2 className="font-bold text-center text-gray-900 tracking-widest text-sm mb-3">CONTACT</h2>
                         <p className="text-sm text-gray-600 text-start">
                             Email: contact@watchworld.com<br />
-                            Phone: +91 87890 29399<br />
+                            Phone: +91 977-111-0509<br />
                             Address: Jamia Nagar, Okhla, New Delhi, Delhi
                         </p>
 

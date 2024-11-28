@@ -33,7 +33,7 @@ export default function Categories() {
                             <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mb-4 rounded-full overflow-hidden">
                                 <img
                                     src={image7}
-                                    alt="Image 1"
+                                    alt="watch titan"
                                     className="w-full h-full object-cover"
                                     onClick={handleButtonClick}
                                 />
@@ -46,7 +46,7 @@ export default function Categories() {
                             <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mb-4 rounded-full overflow-hidden">
                                 <img
                                     src={image2}
-                                    alt="Image 2"
+                                    alt="watch"
                                     className="w-full h-full object-cover"
                                     onClick={handleButtonClick}
                                 />
@@ -59,7 +59,7 @@ export default function Categories() {
                             <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mb-4 rounded-full overflow-hidden">
                                 <img
                                     src={image5}
-                                    alt="Image 3"
+                                    alt="watch"
                                     className="w-full h-full object-cover"
                                     onClick={handleButtonClick}
                                 />

@@ -1,15 +1,15 @@
 import React from 'react'
-import image5 from "../Images/pexels-lum3n-44775-604575.jpg"
+import image5 from "../Images/domenico-loia-hGV2TfOh0ns-unsplash.jpg"
 
 const AboutUs = () => {
     return (
         <div>
-            < div className='pt-20 bg-orange-50'>
+            < div className='pt-28 bg-orange-50'>
                 <section className="text-gray-900 body-font overflow-hidden">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-2 text-center">About Us</h2>
                     <div className="container px-5 py-14 mx-auto">
                         <div className="lg:w-4/5 mx-auto flex flex-wrap">
-                            <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src={image5} />
+                            <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src={image5} loading="lazy"/>
                             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                                 <p className="leading-relaxed">
                                     Welcome to Watch World, your premier destination for timeless elegance and precision in Delhi. <br /> <br />

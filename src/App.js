@@ -9,6 +9,7 @@ import Productpage from './Pages/Productpage'; // Adjusted the path to be consis
 import Carts from "./Pages/Carts";
 import AboutUs from "./Pages/AboutUs";
 import ContactUs from "./Pages/ContactUs";
+import VisitStore from "./Pages/VisitStore";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path="/productpage" element={<Productpage />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/VisitStore" element={<VisitStore/>}/>
+        <Route path="/Carts" element={<Carts/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>

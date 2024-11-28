@@ -7,6 +7,8 @@ const Navbar = () => {
     const [showHeader, setShowHeader] = useState(true); // For header visibility
     const [lastScroll, setLastScroll] = useState(0); // Store last scroll position
 
+
+    
     useEffect(() => {
         const handleScroll = () => {
             const currentScroll = window.scrollY;
@@ -40,7 +42,7 @@ const Navbar = () => {
                     <hr className="w-2/4 border-none h-[1.5px] hidden" />
                 </Link>
 
-                <Link to="/Products" className="text-gray-700 hover:text-black hidden md:flex lg:flex flex-col items-center gap-1">
+                <Link to="/Productpage" className="text-gray-700 hover:text-black hidden md:flex lg:flex flex-col items-center gap-1">
                     <p>PRODUCT</p>
                     <hr className="w-2/4 border-none h-[1.5px] hidden" />
                 </Link>

@@ -10,8 +10,15 @@ import image7 from "../Images/pexels-gullywabbit-3638006-7749381.jpg"
 import image4 from "../Images/pexels-jatin-anand-33853-125779.jpg"
 import image9 from "../Images/pexels-joey-nguy-n-1056657-2113994.jpg"
 import image8 from "../Images/alvaro-bernal-RgIKRYhmG2k-unsplash.jpg"
+import { useNavigate } from 'react-router-dom';
 
 const Productpage = () => {
+    const navigate=useNavigate()
+    const handleButtonClick = () => {
+        navigate('/VisitStore');
+    };
+
+
     return (
         <>
         <div className='bg-white'>
@@ -21,17 +28,17 @@ const Productpage = () => {
                     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image1} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image1} onClick={handleButtonClick} />
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                                <h2 class="text-gray-900 title-font text-lg font-medium">Titan Edge</h2>
+                                <h2 class="text-gray-900 title-font text-lg font-medium" >Titan Edge</h2>
                                 <p class="mt-1">₹5499.00</p>
                             </div>
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image2} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image2} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -41,7 +48,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image3} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image3} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -51,7 +58,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image4} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image4} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -61,7 +68,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image5} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image5} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -71,7 +78,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image6} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image6} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -81,7 +88,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image7} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image7} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -91,7 +98,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image8} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image8} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -104,7 +111,7 @@ const Productpage = () => {
 
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image1} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image1} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -114,7 +121,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image2} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image2} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -124,7 +131,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image3} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image3} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -134,7 +141,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image4} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image4} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -144,7 +151,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image5} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image5} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -154,7 +161,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image6} />
+                                <img alt="ecommerce" class="object-cover object-center w-full cursor-pointer h-full block" src={image6} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -164,7 +171,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image7} />
+                                <img alt="ecommerce" class="object-cover object-center w-full cursor-pointer h-full block" src={image7} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -174,7 +181,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image8} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image8} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -185,7 +192,7 @@ const Productpage = () => {
 
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image2} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image2} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -195,7 +202,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image3} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image3} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -205,7 +212,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image4} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image4} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -215,7 +222,7 @@ const Productpage = () => {
                         </div>
                         <div class="mb-10 px-4">
                             <a class="block relative h-48 rounded overflow-hidden">
-                                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={image5} />
+                                <img alt="ecommerce" class="object-cover object-center w-full h-full block cursor-pointer" src={image5} onClick={handleButtonClick}/>
                             </a>
                             <div class="mt-4">
                                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>

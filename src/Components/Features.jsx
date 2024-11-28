@@ -28,7 +28,7 @@ export default function Features() {
                 <h2 className="text-center text-gray-900 text-3xl sm:text-4xl font-semibold mt-20 mb-20 uppercase">New Launches</h2>
                 <div className="container mx-auto">
                     {/* Grid layout for images */}
-                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-6">
                         {/* Card 1 */}
                         <div className="mb-10">
                             <div
@@ -52,24 +52,9 @@ export default function Features() {
                             >
                                 <img alt="content" className="object-cover object-center h-full w-full" src={image2} />
                             </div>
-                            <h2 className="title-font text-xl sm:text-2xl font-medium text-gray-900 mt-6 mb-3 text-center">Xylus Gold</h2>
+                            <h2 className="title-font text-xl sm:text-2xl font-medium text-gray-900 mt-6 mb-3 text-center">Xylus Gold Special Edition</h2>
                             <p className="leading-relaxed text-base text-center">Gold Series of special watches presented by Xylus</p>
                             <button className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded" onClick={handleButtonClick}>
-                                View
-                            </button>
-                        </div>
-
-                        {/* Card 3 */}
-                        <div className="mb-10">
-                            <div
-                                className="rounded-lg h-48 sm:h-64 overflow-hidden"
-
-                            >
-                                <img alt="content" className="object-cover object-center h-full w-full" src={image3} />
-                            </div>
-                            <h2 className="title-font text-xl sm:text-2xl font-medium text-gray-900 mt-6 mb-3 text-center">Titan Automatic</h2>
-                            <p className="leading-relaxed text-base text-center">Titan's New series that shows Automatic trend</p>
-                            <button className="flex mx-auto mt-6  text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded" onClick={handleButtonClick}>
                                 View
                             </button>
                         </div>
@@ -81,7 +66,7 @@ export default function Features() {
                 <div
                     className="rounded-lg flex justify-center items-center"
                     style={{
-                        transform: `scale(${0.4 + scrollPosition / 1300})`, // Start at 0.8 and grow with scroll
+                        transform: `scale(${0.1 + scrollPosition / 1300})`, // Start at 0.8 and grow with scroll
                         transition: "transform 0.3s ease-out",
                         transformOrigin: "center", // Scale from the center
                     }}
